@@ -45,6 +45,12 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>2.3.1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tetouch</string>
+		<string>tetouch-xc</string>
+		<string>tetouch-settings</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
@@ -77,12 +83,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>tetouch</string>
-		<string>tetouch-xc</string>
-		<string>tetouch-settings</string>
 	</array>
 </dict>
 </plist>

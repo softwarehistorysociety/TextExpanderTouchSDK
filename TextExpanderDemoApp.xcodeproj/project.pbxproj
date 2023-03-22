@@ -36,6 +36,7 @@
 		30A7A8291992B57200041066 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307C4A271841315A00A7C044 /* AudioToolbox.framework */; };
 		30CA380225AD58C300EFCA9B /* TextExpander.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CA37FF25AD58BF00EFCA9B /* TextExpander.xcframework */; };
 		30CA380325AD58C300EFCA9B /* TextExpander.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30CA37FF25AD58BF00EFCA9B /* TextExpander.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32075F8829CBB46D00742443 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 32075F8729CBB46D00742443 /* AppIcon.appiconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +103,7 @@
 		30A7A8261992B30E00041066 /* DemoAppKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoAppKeyboard.xib; sourceTree = "<group>"; };
 		30A7A82A1992B62800041066 /* DemoAppKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DemoAppKeyboard.entitlements; sourceTree = "<group>"; };
 		30CA37FF25AD58BF00EFCA9B /* TextExpander.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TextExpander.xcframework; sourceTree = "<group>"; };
+		32075F8729CBB46D00742443 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		307C49FA18412EC200A7C044 /* TextExpanderDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				32075F8729CBB46D00742443 /* AppIcon.appiconset */,
 				307C4A0318412EC200A7C044 /* SMAppDelegate.h */,
 				307C4A0418412EC200A7C044 /* SMAppDelegate.m */,
 				307C4A0C18412EC200A7C044 /* MainStoryboard_iPhone.storyboard */,
@@ -269,10 +272,9 @@
 			attributes = {
 				CLASSPREFIX = SM;
 				LastUpgradeCheck = 1420;
-				ORGANIZATIONNAME = "Greg Scown";
+				ORGANIZATIONNAME = "David Blue";
 				TargetAttributes = {
 					307C49F018412EC200A7C044 = {
-						DevelopmentTeam = 7PKJ6G4DXL;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -318,6 +320,7 @@
 				307C4A0718412EC200A7C044 /* Default.png in Resources */,
 				307C4A0918412EC200A7C044 /* Default@2x.png in Resources */,
 				307C4A0B18412EC200A7C044 /* Default-568h@2x.png in Resources */,
+				32075F8829CBB46D00742443 /* AppIcon.appiconset in Resources */,
 				307C4A0E18412EC200A7C044 /* MainStoryboard_iPhone.storyboard in Resources */,
 				307C4A1618412EC200A7C044 /* first.png in Resources */,
 				307C4A1818412EC200A7C044 /* first@2x.png in Resources */,
@@ -486,6 +489,8 @@
 		307C4A2318412EC200A7C044 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				DEVELOPMENT_TEAM = JCH5W6VSL6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -494,12 +499,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextExpanderDemoApp/TextExpanderDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "TextExpanderDemoApp/TextExpanderDemoApp-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.smileonmymac.textexpanderdemoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.extratone.textexpanderdemoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -509,6 +515,8 @@
 		307C4A2418412EC200A7C044 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				DEVELOPMENT_TEAM = JCH5W6VSL6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -517,12 +525,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextExpanderDemoApp/TextExpanderDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "TextExpanderDemoApp/TextExpanderDemoApp-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.smileonmymac.textexpanderdemoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.extratone.textexpanderdemoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
